@@ -14,7 +14,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setId(data.slip.id);
-        setAdvice(data.slip.advice);
+        setAdvice(JSON.stringify(data.slip.advice));
       });
   }, []);
 
@@ -25,14 +25,14 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setId(data.slip.id);
-        setAdvice(data.slip.advice);
+        setAdvice(JSON.stringify(data.slip.advice));
       });
   };
 
   return (
     <main className="advice-container max-w-lg p-5 py-10 lg:p-12 text-center rounded-2xl flex items-center justify-center flex-col gap-7 relative lg:pb-16 pb-16">
       <span>ADVICE #{id}</span>
-      <h1 className="text-[28px]">"{advice}"</h1>
+      <h1 className="text-[28px]">{advice}</h1>
       <Image
         className="hidden md:block"
         src={"./pattern-divider-desktop.svg"}
