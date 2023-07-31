@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Github Repo: [fm-advice-generator](https://github.com/Mikoyzskie/fm-advice-generator)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live vercel site](https://fm-advice-generator-19dt.vercel.app/)
 
 ## My process
 
